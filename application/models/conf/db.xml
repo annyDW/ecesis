@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databases>
+	<database databasemanager="postgresql" conf="default">
+		<host>127.0.0.1</host>
+		<dbname>ecesis</dbname>
+		<username>postgres</username>
+		<clave>bases1436</clave>
+	</database>
+	<database databasemanager="mysql" conf="desarrollo">
+		<host>127.0.0.1</host>
+		<dbname>ecesis</dbname>
+		<username>root</username>
+		<clave>bases1436</clave>
+	</database>
+</databases>
