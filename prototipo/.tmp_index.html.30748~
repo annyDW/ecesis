@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+		<title>&Eacute;cesis :: Sistema para la simulaci&oacute;n de la evaluacion ECAES</title>
+		<link rel="stylesheet" href="css/reset.css" media="screen"/>
+		<link rel="stylesheet" href="css/style.css" media="screen"/>
+		<style>
+			#sidebar li{
+				list-style: none;
+				text-align: center;
+				
+			}
+			
+			#sidebar li p{
+				font-size: 0,5em;
+			}
+			
+			#sidebar ul{
+				margin-left: 5%;
+				margin-right: 5%;
+				width: 90%;
+				padding: 2px 2px 2px 2px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="header-bg"></div>
+		<div id="page">
+			<div id="header">
+				<div id="logo"></div>
+				<div id="nav-bar">
+					<ul>
+						<li><a href="#">Crear un test</a></li>
+						<li><a href="#">Cronograma</a></li>
+						<li><a href="#">Mi Rendimiento</a></li>
+						<li><a href="#">Salir</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="banner">
+				<div id="image-banner"></div>
+				<div id="motd"></div>
+			</div>
+			<div id="content">
+				<div class="help"></div>
+				<div id="options">
+					<table>
+						<tr>
+							<td align="center">
+								<a href="#"><img src="images/exam.jpg" height="48" width="48"/>
+								<p>Crear un examen</p></a>
+							</td>
+							<td align="center">
+								<a href="#"><img src="images/cron.png" height="48" width="48"/>
+								<p>Cronograma</p></a>
+							</td>
+						</tr>
+						<tr>
+							<td align="center">
+								<a href="#"><img src="images/rendimiento.jpg" height="48" width="48"/>
+								<p>Mi Rendimiento</p></a>
+							</td>
+							<td align="center">
+								<a href="#"><img src="images/quit.png" height="48" width="48"/>
+								<p>Salir</p></a>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div id="sidebar">
+				<div class="inside-sidebar" id="login-info">
+					<ul>
+						<li><p><b>Kamilo Cervantes S.</b></p></li>
+						<li><p><b>Programa:</b> Ingeniería de Sistemas</p></li>
+						<li><p><b>Semestre:</b> IX</p></li>
+						<li><p><b>Último login:</b> 24 de febrero de 2011</p></li>
+					</ul>
+				</div>
+				<div id="logounicor"></div>
+			</div>
+		</div>
+	</body>
+</html>

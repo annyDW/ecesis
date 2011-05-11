@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+		<title>&Eacute;cesis :: Sistema para la simulaci&oacute;n de la evaluacion ECAES</title>
+		<link rel="stylesheet" href="css/reset.css" media="screen"/>
+		<link rel="stylesheet" href="css/style.css" media="screen"/>
+		<script src="jquery/jquery-1.5.js" type="text/javascript"></script>
+		<script src="js/usuario.js" type="text/javascript"></script>
+		<script src="js/redirecciones.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div id="header-bg"></div>
+		<div id="page">
+			<div id="header">
+				<div id="logo"></div>
+			</div>
+			<div id="banner">
+				<div id="image-banner"></div>
+				<div id="motd"></div>
+			</div>
+			<hr/>
+			<div id="content" style="background-color: #c0f56e;">
+				<div id="login-form">
+					<ul>
+					<li><p>Entrar al sistema</p></li>
+					<li id="msgerr"></li>
+					<li><input type="text" name="usuario" id="user" value="Nombre de usuario" onclick="limpiarcampo('user');" onblur="verificarcampo('user','Nombre de usuario')"/></li>
+					<li><input type="password" name="pwd" id="pwd" value="Contrase&ntilde;a" onclick="limpiarcampo('pwd');" onblur="verificarcampo('pwd','Contrase&ntilde;a')" /></li>
+					<li><input type="button" value="Entrar" onclick="validar()"/></li>
+					<li><a href="#">>>Recuperar datos de cuenta</a></li>
+					</ul>
+				</div>
+				<div id="info">
+					<p class="antetitulos">Bienvenido a &eacute;cesis</p>
+					<p>Écesis es una herramienta que tiene como objetivo preparar a los estudiantes 
+					universitarios, que cursan el ultimo a&ntilde;o de su carrera, para las pruebas ECAES (Saber PRO) 
+					por medio de la evaluación personal y la simulación de las pruebas con ayuda del docente.</p>
+				</div>
+			</div>
+			<div id="footer">
+				<p>&copy; 2011 Universidad de C&oacute;rdoba</p>
+			</div>
+		</div>
+			</body>
+</html>

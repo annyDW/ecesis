@@ -1,0 +1,56 @@
+/* Z-index of #mask must lower than #boxes .window */
+#mask {
+  position:absolute;
+  z-index:9000;
+  background-color:#000;
+  display:none;
+}
+   
+#boxes .window {
+  position:absolute;
+  width:440px;
+  height:200px;
+  display:none;
+  z-index:9999;
+  padding:20px;
+}
+ 
+ 
+/* Customize your modal window here, you can add background image too */
+#boxes #dialog {
+  width:375px;
+  height:268px;
+  background-color: #fff;
+}
+
+#boxes #contacto {
+  width:375px;
+  height:268px;
+  background-color: #fff;
+}
+
+
+			#boxes table{
+				width: 90%;
+				margin: 5px 5% 5px 5%;
+			}
+			
+			#boxes table#formatos tr{
+				margin: 1px auto 1px auto;
+				padding: 0 0 0 0;
+				background-color: #baf46e;
+			}
+			
+			#boxes table#formatos td{
+				display: inline-block;
+				padding: 3px 3px 3px 3px;
+			}
+			
+			#boxes table p{
+				font-weight: bold;
+			}
+			
+			#boxes a{
+				color: green;
+			}
+			
