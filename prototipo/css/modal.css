@@ -12,45 +12,16 @@
   height:200px;
   display:none;
   z-index:9999;
-  padding:20px;
+  padding:30px;
 }
  
  
 /* Customize your modal window here, you can add background image too */
 #boxes #dialog {
-  width:375px;
-  height:268px;
-  background-color: #fff;
-}
-
-#boxes #contacto {
-  width:375px;
-  height:268px;
+  width:322px;
+  height:330px;
   background-color: #fff;
 }
 
 
-			#boxes table{
-				width: 90%;
-				margin: 5px 5% 5px 5%;
-			}
-			
-			#boxes table#formatos tr{
-				margin: 1px auto 1px auto;
-				padding: 0 0 0 0;
-				background-color: #baf46e;
-			}
-			
-			#boxes table#formatos td{
-				display: inline-block;
-				padding: 3px 3px 3px 3px;
-			}
-			
-			#boxes table p{
-				font-weight: bold;
-			}
-			
-			#boxes a{
-				color: green;
-			}
-			
+

@@ -351,14 +351,14 @@ a:hover{
 				padding-left: 20px;
 			}
 			
-			#mainsection .tituloseccion{
+			#mainsection .tituloseccion, #createstform .tituloseccion{
 				margin-left: 10px;
 				height: 32px;
 				width: 100%;
 				border-bottom: 1px solid #ccc;
 			}
 			
-			#mainsection .tituloseccion h3{
+			#mainsection .tituloseccion h3, #createstform .tituloseccion h3{
 				font-family: Trebuchet MS, Georgia;
 				font-weight: bold;
 				font-size: 20px;
