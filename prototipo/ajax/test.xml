@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<test>
+	<area id="1" nombre="Contaduría">
+		<asignatura cod="1">
+			<nombre>Macroeconomía</nombre>
+			<semestre>09</semestre>
+		</asignatura>
+		<asignatura cod="2">
+			<nombre>Contaduría pública</nombre>
+			<semestre>09</semestre>
+		</asignatura>
+		<asignatura cod="3">
+			<nombre>Contaduría 3</nombre>
+			<semestre>09</semestre>
+		</asignatura>
+		<asignatura cod="4">
+			<nombre>Contaduría 4</nombre>
+			<semestre>09</semestre>
+		</asignatura>
+	</area>
+	<area id="2" nombre="Economía">
+		<asignatura cod="4">
+			<nombre>Economía 1</nombre>
+			<semestre>09</semestre>
+		</asignatura>
+		<asignatura cod="5">
+			<nombre>Economía 2</nombre>
+			<semestre>09</semestre>
+		</asignatura>
+		<asignatura cod="6">
+			<nombre>Economía 3</nombre>
+			<semestre>09</semestre>
+		</asignatura>
+		<asignatura cod="7">
+			<nombre>Economía 4</nombre>
+			<semestre>09</semestre>
+		</asignatura>
+	</area>
+</test>

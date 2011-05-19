@@ -10,9 +10,12 @@
 		<script src="jquery/ui/jquery.ui.widget.js" type="text/javascript"></script>
 		<script src="jquery/ui/jquery.ui.position.js" type="text/javascript"></script>
 		<script src="jquery/ui/jquery.ui.selectmenu.js" type="text/javascript"></script>
+		<script src="js/events.js" type="text/javascript"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
-				$('select').selectmenu();
+				$('a#toggle').click(function(){
+					$('select').selectmenu();
+				});
 				});
 		</script>
 		<style>
@@ -27,5 +30,6 @@
 			<option>44444444444</option>
 			<option>55555555555</option>
 		</select>
+		<a id="toggle" name="toggle" href="#">Toggle</a>
 	</body>
 </html>
