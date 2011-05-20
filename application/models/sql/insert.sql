@@ -119,23 +119,27 @@ insert INTO programa(idprog, iddpto, nombre, descripcion)
 	-- 01: activo
 
 insert INTO permiso(idpermiso, descripcion, nombrepermiso, estado)
-    VALUES (1, 'descripcionpermiso1', 'permiso1', '01');
+    VALUES (1, 'Permisos estudiantes activos', 'est001', '01');
 
 insert INTO permiso(
             idpermiso, descripcion, nombrepermiso, estado)
-    VALUES (2, 'descripcionpermiso2', 'permiso2', '01');
+    VALUES (2, 'Permisos estudiantes inactivos', 'est002', '01');
 
 insert INTO permiso(
             idpermiso, descripcion, nombrepermiso, estado)
-    VALUES (3, 'descripcionpermiso3', 'permiso3', '01');
+    VALUES (3, 'Permisos auxiliar para ingresar preguntas', 'est003', '01');
 
 insert INTO permiso(
             idpermiso, descripcion, nombrepermiso, estado)
-    VALUES (4, 'descripcionpermiso4', 'permiso4', '01');
+    VALUES (4, 'Permisos docente', 'doc001', '01');
 
 insert INTO permiso(
             idpermiso, descripcion, nombrepermiso, estado)
-    VALUES (5, 'descripcionpermiso5', 'permiso5', '01');
+    VALUES (5, 'Permisos preparador', 'doc002', '01');
+    
+insert INTO permiso(
+            idpermiso, descripcion, nombrepermiso, estado)
+    VALUES (6, 'Permisos administrador', 'admin001', '01');
 
 -- estado1:activo
 
@@ -149,15 +153,11 @@ insert INTO modulo(
 
 insert INTO modulo(
             codigomod, nombre, estado, descripcion)
-    VALUES (3, 'mod0003', 'estado1', 'descripcionmodulo3');
+    VALUES (3, 'mod0003', 'activo', 'Modulo Preparador');
 
 insert INTO modulo(
             codigomod, nombre, estado, descripcion)
-    VALUES (4, 'modulo4', 'estado1', 'descripcionmodulo4');
-
-insert INTO modulo(
-            codigomod, nombre, estado, descripcion)
-    VALUES (5, 'modulo5', 'estado1', 'descripcionmodulo5');
+    VALUES (4, 'mod0004', 'activo', 'Modulo Administrador');
 
 
 insert INTO permisomodulo(
@@ -246,23 +246,23 @@ insert INTO permisomodulo(
 
 insert INTO rol(
             idrol, nombre, descripcion, estado)
-    VALUES (1, 'rol1', 'descripcionrol1', '01');
+    VALUES (1, 'estudiante', 'rol de estudiantes en preparacion', '01');
 
 insert INTO rol(
             idrol, nombre, descripcion, estado)
-    VALUES (2, 'rol2', 'descripcionrol2', '02');
+    VALUES (2, 'docente', 'rol de docente', '02');
 
 insert INTO rol(
             idrol, nombre, descripcion, estado)
-    VALUES (3, 'rol3', 'descripcionrol3', '03');
+    VALUES (3, 'preparador', 'docente encargado de la preparcion de un grupo para las pruebas', '03');
 
 insert INTO rol(
             idrol, nombre, descripcion, estado)
-    VALUES (4, 'rol4', 'descripcionrol4', '04');
+    VALUES (4, 'administrador', 'administrador del sistema', '04');
 
 insert INTO rol(
             idrol, nombre, descripcion, estado)
-    VALUES (5, 'rol5', 'descripcionrol5', '05');
+    VALUES (5, 'escritor', 'encargado de ingresar preguntas', '05');
 
 insert INTO permisorol(
             idrol, idpermiso)
