@@ -25,7 +25,12 @@ hr{
 	margin-bottom: 40px;
 }
 	
-			
+.boton_salir{
+	border:0;
+	padding:0;
+	color: white;
+	background-color: #00112e;
+}			
 #header-bg{
 	background-color: #00112e;
 	width: 100%;
@@ -149,7 +154,7 @@ a:hover{
 	}
 		
 #nav-bar a:hover{
-	color: yellow;
+	color: #14D100;
 	}
 		
 #nav-bar ul{
