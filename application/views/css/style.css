@@ -88,23 +88,26 @@ hr{
 			
 #content{
 	width: 100%;
+	
 	}
 			
 .help{
 			
 	}
 			
-#options{
+#options, #mainsection{
 	width: 70%;
 	height: 400px;
 	float: right;
 	}
+
+#options{
+	margin-top: -15px;
+}
 			
 #sidebar{
 	width: 30%;
 	height: 400px;
-	margin-top: -371px;
-	border-right: 1px solid gray;
 	margin-bottom: 10px;
 	}
 			
@@ -118,7 +121,7 @@ hr{
 			
 #login-info{
 	background: url('../images/user.png') no-repeat;
-	padding-left: 18px;
+	border-bottom: 1px solid gray;
 	margin-bottom: 2px;
 	}
 			
@@ -128,6 +131,7 @@ hr{
 	font-family: Verdana;
 	font-size: 11px;
 	font-weight: bold;
+	padding-left: 18px;
 }
 			
 #logounicor{
@@ -195,19 +199,14 @@ a:hover{
 	}
 			
 #menubanner{
-	width: 100%;
+	margin-top: 10px;
+	float: right;
+	width: 70%;
 	height: 25px;
-	background: url('../images/menubg.png') no-repeat 35% 5px;
-	border-top: 1px solid blue;
+	background: url('../images/menubg.png') no-repeat 0px 5px;
+	margin-bottom: 1px;
 	}
-
-#menuPreguntas{
-	width: 100%;
-	height: 25px;
-	background: url('../images/gestionPreguntas.png') no-repeat 250px 5px;
-	border-top: 1px solid blue;
-	}
-		
+			
 #footer{
 	width: 100%;
 	height: 100px;
@@ -284,32 +283,229 @@ a:hover{
 	margin-bottom: 0px;
 }
 
-#caja_registro ul {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-	}
-	
-	#caja_registro {
-		background: #FFF;
-		border: 1px solid silver;
-		margin: 1em auto;
-		padding: 1em;
-		width: 400px;
-	}
-	
-	span.requerido {
-		font-size: 1.3em;
-		font-weight: bold;
-		color: #C00;
-	}
+#sidebar #resumencron p, #sidebar #resumenrendimiento p{
+				font-size: 10px; 
+			}
+			
+			#sidebar #resumenrendimiento p{
+				text-align: left;
+			}
+			
+			#sidebar #resumencron span.fecha, #sidebar #resumenrendimiento span.item{
+				color: red;
+			}
+			
+			#sidebar #resumencron li{
+				background: url('../images/examevt.jpg') no-repeat 10px 0px;
+			}
+			
+			#sidebar #resumencron li p{
+				display: block;
+				width: 120px;
+				padding-left: 27px;
+			}
+			
+			#sidebar #resumencron p.title, #sidebar #resumenrendimiento p.title{
+				margin-bottom: 1px;
+				font-size: 12px;
+				display: block;
+				height: 17px;
+				padding-left: 27px;
+				padding-top: 7px;
+			}
+			
+			#sidebar #resumencron p.title{
+				background: url('../images/cronmin.png') no-repeat;
+			}
+			
+			#sidebar #resumenrendimiento p.title{
+				background: url('../images/reportmin.png') no-repeat;
+			}
+			
+			#sidebar #resumencron ul,#sidebar #resumenrendimiento ul{
+				margin-top: 1px;
+			}
+			
+			#mainsection #nav{
+				width:100%;
+				display:block;
+				height: 20px;
+			}
+			
+			#mainsection #nav a{
+				font-size: 11px;
+				font-weight: bold;
+			}
+			
+			#mainsection #nav ul{
+				display: block;
+			}
+			
+			#mainsection #nav li{
+				display: inline;
+				float: right;
+			}
+			
+			#content #nav a.back{
+				background: url('../images/back.png') no-repeat;
+				padding-left: 20px;
+			}
+			
+			#mainsection .tituloseccion, #createstform .tituloseccion{
+				margin-left: 10px;
+				height: 32px;
+				width: 100%;
+				border-bottom: 1px solid #ccc;
+			}
+			
+			#mainsection .tituloseccion h3, #createstform .tituloseccion h3{
+				font-family: Trebuchet MS, Georgia;
+				font-weight: bold;
+				font-size: 20px;
+				padding-left: 35px;
+				padding-top: 5px;
 
-	#caja_registro h2 {
-		font: normal 2em arial, sans-serif;
-		margin: 0;
-	}
-	
-	.comentario_contacto{
-			height: 80px;
-			width: 300px;
-	}
+			}
+			
+			#mainsection #cronograma #titulocron{
+				background: url('../images/cron32.png') no-repeat;
+				margin-bottom: 10px;
+			}
+			
+			#mainsection #cronograma #tituloevt{
+				margin-top: -10px;
+				background: url('../images/event.png') no-repeat;
+			}
+			
+			#mainsection #calendar{
+				display: block;
+				margin-left: 5%;
+				margin-right: 5%;
+				width: 90%;
+			}
+			
+			#mainsection #calendar table{
+				width: 100%;
+			}
+			
+			#mainsection #calendarcontrols table td{
+				border: 0;
+			}
+			
+			#mainsection table#cal td{
+				border: 0;
+			}
+			
+			#mainsection table#cal td#aleft{
+				background: url('../images/arrow_state_blue_left.png') no-repeat 8px 0px;
+				width: 16px;
+				height: 16px;
+			}
+			
+			#mainsection table#cal td#aright{
+				background: url('../images/arrow_state_blue_right.png') no-repeat 96% 0px;
+				width: 16px;
+				height: 16px;
+			}
+			
+			#mainsection table#cal td#aleft:hover{
+				background: url('../images/arrow_state_yellow_left.png') no-repeat 8px 0px;
+				
+			}
+			
+			#mainsection table#cal td#aright:hover{
+				background: url('../images/arrow_state_yellow_right.png') no-repeat 96% 0px;
+			}
+			
+			#mainsection #eventos{
+				width: 100%;
+			}
+			
+			#mainsection #eventos ul{
+				width: 100%;
+				margin-left: 0px;
+			}
+			
+			#mainsection #eventos li{
+				background: url('../images/examevt.jpg') no-repeat 0px 0px;
+				padding-left: 24px;
+				display: block;
+			}
+			
+			#mainsection #eventos span.hora{
+				color: red;
+			}
+
+						input.text{
+				width: 100%;
+			}
+			
+			input.text{
+				height:30px;
+				font-size: 24px;
+				padding: 2px 2px 2px 2px;
+				font-family: Georgia, Arial, sans-serif;
+				background-color: #fcfc80;
+				border: 1px solid orange;
+			}
+			
+			#boxes #createstform ul{
+				width: 90%;
+				margin-left: 0px;
+				padding-left: 0px;
+			}
+			
+			#boxes #createstform li{
+				display: block;
+				margin: 4px 1px 4px 1px;
+				padding: 4px 1px 4px 1px;
+			}
+			
+			#boxes #createstform p{
+				display: inline;
+			}
+			
+			#boxes #createstform select{
+				width: 100%;
+			}
+			
+			a.ui-selectmenu.ui-widget.ui-state-default.ui-selectmenu-dropdown.ui-corner-all, a.ui-selectmenu.ui-widget.ui-state-default.ui-selectmenu-dropdown.ui-state-active.ui-corner-top{
+				width: 100% !important;
+			}
+			
+			ul.ui-selectmenu-menu.ui-widget.ui-widget-content.ui-selectmenu-menu-dropdown.ui-corner-bottom.ui-selectmenu-open{
+				width: 285px !important;
+			}
+			
+			#boxes #createstform table{
+				width: 100%;
+			}
+			
+			#boxes #createstform td{
+				border: none;
+			}
+			
+			#boxes #createstform a#btnok, #boxes #createstform a#btncancel{
+				width: 100px;
+				height: 45px;
+				background-color: #ccc;
+				display: block;
+			}
+			
+			#boxes #createstform a#btnok{
+				background: url('../images/btnok.png') no-repeat;
+			}
+			
+			#boxes #createstform a#btncancel{
+				float: right;
+				background: url('../images/btnatras.png') no-repeat;
+			}
+			
+			#createstform .tituloseccion{
+				background-color: #ccc;
+			}
+			
+			#createstform #titulotestform{
+				background: url('../images/exam.png') no-repeat;
+				margin-top: -25px;
+			}

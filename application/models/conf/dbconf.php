@@ -1,8 +1,8 @@
 <?php
 class dbconf{
 private $_nombrebd = "ecesis";
-private $_usuario = "postgres";
-private $_pass = "bases1436";
+private $_usuario = "ecesis";
+private $_pass = "danger8931";
 private $_servidor = "127.0.0.1";
 private $_gestorBD = "postgresql";
 
