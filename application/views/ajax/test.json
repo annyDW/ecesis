@@ -1,0 +1,55 @@
+{
+    "test":{
+        "area":[{
+                "id":"1",
+                "nombre":"Contaduría",
+                "asignatura":[{
+                        "cod":"1",
+                        "nombre":"Macroeconomía",
+                        "semestre":"9"
+                    },
+                    {
+                        "cod":"2",
+                        "nombre":"Contaduría pública",
+                        "semestre":"9"
+                    },
+                    {
+                        "cod":"3",
+                        "nombre":"Contaduría 3",
+                        "semestre":"9"
+                    },
+                    {
+                        "cod":"4",
+                        "nombre":"Contaduría 4",
+                        "semestre":"9"
+                    }
+                ]
+            },
+            {
+                "id":"2",
+                "nombre":"Economía",
+                "asignatura":[{
+                        "cod":"4",
+                        "nombre":"Economía 1",
+                        "semestre":"9"
+                    },
+                    {
+                        "cod":"5",
+                        "nombre":"Economía 2",
+                        "semestre":"9"
+                    },
+                    {
+                        "cod":"6",
+                        "nombre":"Economía 3",
+                        "semestre":"9"
+                    },
+                    {
+                        "cod":"7",
+                        "nombre":"Economía 4",
+                        "semestre":"9"
+                    }
+                ]
+            }
+        ]
+    }
+}
