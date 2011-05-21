@@ -88,7 +88,7 @@ hr{
 			
 #content{
 	width: 100%;
-	
+	background-color: #3F92D2;
 	}
 			
 .help{
@@ -226,7 +226,7 @@ a:hover{
 	width: 35%;
 	height: 245px;
 	margin-top: 0;
-	background-color: #25b300;
+	background-color: #25567B;
 	float: right;
 	}
 			
