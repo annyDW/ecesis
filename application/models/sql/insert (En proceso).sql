@@ -280,3 +280,314 @@ insert INTO usuarioperfil(
 insert INTO usuarioperfil(
             idperfil, iduser)
     VALUES (4, 4);
+
+
+
+-- 9: evaluador
+
+insert INTO simulacro(
+            idsimulacro, nombre, fechapublicacion, fechafinalizacion, duracion)
+    VALUES (1, 'simulacro1','2011-04-26', '2011-04-27', '01:00:00');
+
+insert INTO usuariocreasimulacro(
+            iduser, idsimulacro)
+    VALUES (9, 1);
+
+-- 8: docente
+
+
+
+insert INTO pregunta(
+            idpregunta, iduser, idasignatura, tipo, contenido)
+    VALUES (1, 8, 1, 'tipopregunta1', 'pregunta1');
+
+insert INTO pregunta(
+            idpregunta, iduser, idasignatura, tipo, contenido)
+    VALUES (2, 8, 1, 'tipopregunta2', 'pregunta2');
+
+insert INTO pregunta(
+            idpregunta, iduser, idasignatura, tipo, contenido)
+    VALUES (3, 8, 1, 'tipopregunta3', 'pregunta3');
+
+insert INTO pregunta(
+            idpregunta, iduser, idasignatura, tipo, contenido)
+    VALUES (4, 8, 1, 'tipopregunta4', 'pregunta4');
+
+insert INTO pregunta(
+            idpregunta, iduser, idasignatura, tipo, contenido)
+    VALUES (5, 8, 1, 'tipopregunta5', 'pregunta5');
+
+insert INTO pregunta(
+            idpregunta, iduser, idasignatura, tipo, contenido)
+    VALUES (6, 8, 2, 'tipopregunta6', 'pregunta6');
+
+insert INTO pregunta(
+            idpregunta, iduser, idasignatura, tipo, contenido)
+    VALUES (7, 8, 2, 'tipopregunta7', 'pregunta7');
+
+insert INTO pregunta(
+            idpregunta, iduser, idasignatura, tipo, contenido)
+    VALUES (8, 8, 2, 'tipopregunta8', 'pregunta8');
+
+insert INTO pregunta(
+            idpregunta, iduser, idasignatura, tipo, contenido)
+    VALUES (9, 8, 2, 'tipopregunta9', 'pregunta9');
+
+insert INTO pregunta(
+            idpregunta, iduser, idasignatura, tipo, contenido)
+    VALUES (10, 8, 2, 'tipopregunta10', 'pregunta10');
+
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (1, 1, 'opcion1a', TRUE);
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (2, 1, 'opcion1b', FALSE);
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (3, 1, 'opcion1c', FALSE);
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (4, 1, 'opcion1d', FALSE);
+
+--
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (5, 2, 'opcion2a', TRUE);
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (6, 2, 'opcion2b', FALSE);
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (7, 2, 'opcion2c', FALSE);
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (8, 2, 'opcion2d', FALSE);
+
+--
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (9, 3, 'opcion3a', TRUE);
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (10, 3, 'opcion3b', FALSE);
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (11, 3, 'opcion3c', FALSE);
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (12, 3, 'opcion3d', FALSE);
+
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (13, 4, 'opcion4a', FALSE);
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (14, 4, 'opcion4b', FALSE);
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (15, 4, 'opcion4c', TRUE);
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (16, 4, 'opcion4d', FALSE);
+
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (17, 5, 'opcion5a', FALSE);
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (18, 5, 'opcion5b', FALSE);
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (19, 5, 'opcion5c', TRUE);
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (20, 5, 'opcion5d', FALSE);
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (21, 6, 'opcion6a', TRUE);
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (22, 6, 'opcion6b', FALSE);
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (23, 6, 'opcion6c', FALSE);
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (24, 6, 'opcion6d', FALSE);
+
+--
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (25, 7, 'opcion7a', TRUE);
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (26, 7, 'opcion7b', FALSE);
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (27, 7, 'opcion7c', FALSE);
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (28, 7, 'opcion7d', FALSE);
+
+--
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (29, 8, 'opcion8a', TRUE);
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (30, 8, 'opcion8b', FALSE);
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (31, 8, 'opcion8c', FALSE);
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (32, 8, 'opcion8d', FALSE);
+
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (33, 9, 'opcion9a', FALSE);
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (34, 9, 'opcion9b', FALSE);
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (35, 9, 'opcion9c', TRUE);
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (36, 9, 'opcion9d', FALSE);
+
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (37, 10, 'opcion10a', FALSE);
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (38, 10, 'opcion10b', FALSE);
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (39,10, 'opcion10c', TRUE);
+
+insert INTO respuesta(
+            idrespuesta, idpregunta, contenido, correcta)
+    VALUES (40, 10, 'opcion10d', FALSE);
+
+
+insert INTO test(
+            idsimulacro, idpregunta, idrespuesta, idtest, horainicio, horafinalizacion)
+    VALUES (1, 1, 2, 1, '02:34:00', '03:34:00');
+
+insert INTO test(
+            idsimulacro, idpregunta, idrespuesta, idtest, horainicio, horafinalizacion)
+    VALUES (1, 2, 5, 2, '02:34:00', '03:34:00');
+
+insert INTO test(
+            idsimulacro, idpregunta, idrespuesta, idtest, horainicio, horafinalizacion)
+    VALUES (1, 3, 11, 3, '02:34:00', '03:34:00');
+
+insert INTO test(
+            idsimulacro, idpregunta, idrespuesta, idtest, horainicio, horafinalizacion)
+    VALUES (1, 4, 13, 4, '02:34:00', '03:34:00');
+
+insert INTO test(
+            idsimulacro, idpregunta, idrespuesta, idtest, horainicio, horafinalizacion)
+    VALUES (1, 5, 19, 5, '02:34:00', '03:34:00');
+
+insert INTO test(
+            idsimulacro, idpregunta, idrespuesta, idtest, horainicio, horafinalizacion)
+    VALUES (1, 6, 22, 6, '02:34:00', '03:34:00');
+
+insert INTO test(
+            idsimulacro, idpregunta, idrespuesta, idtest, horainicio, horafinalizacion)
+    VALUES (1, 7, 26, 7, '02:34:00', '03:34:00');
+
+insert INTO test(
+            idsimulacro, idpregunta, idrespuesta, idtest, horainicio, horafinalizacion)
+    VALUES (1, 8, 30, 8, '02:34:00', '03:34:00');
+
+insert INTO test(
+            idsimulacro, idpregunta, idrespuesta, idtest, horainicio, horafinalizacion)
+    VALUES (1, 9, 34, 9, '02:34:00', '03:34:00');
+
+insert INTO test(
+            idsimulacro, idpregunta, idrespuesta, idtest, horainicio, horafinalizacion)
+    VALUES (1, 10, 38, 10, '02:34:00', '03:34:00');
+
+
+insert INTO usuariosolucionatest(
+            idsolucion, idtest, iduser)
+    VALUES (1, 1, 1);
+
+insert INTO usuariosolucionatest(
+            idsolucion, idtest, iduser)
+    VALUES (2, 2, 1);
+
+insert INTO usuariosolucionatest(
+            idsolucion, idtest, iduser)
+    VALUES (3, 3, 1);
+
+insert INTO usuariosolucionatest(
+            idsolucion, idtest, iduser)
+    VALUES (4, 4, 1);
+
+insert INTO usuariosolucionatest(
+            idsolucion, idtest, iduser)
+    VALUES (5, 5, 1);
+
+insert INTO usuariosolucionatest(
+            idsolucion, idtest, iduser)
+    VALUES (6, 6, 1);
+
+insert INTO usuariosolucionatest(
+            idsolucion, idtest, iduser)
+    VALUES (7, 7, 1);
+
+insert INTO usuariosolucionatest(
+            idsolucion, idtest, iduser)
+    VALUES (8, 8, 1);
+
+insert INTO usuariosolucionatest(
+            idsolucion, idtest, iduser)
+    VALUES (9, 9, 1);
+
+insert INTO usuariosolucionatest(
+            idsolucion, idtest, iduser)
+    VALUES (10, 10, 1);

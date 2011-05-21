@@ -9,9 +9,9 @@ DROP TABLE IF EXISTS simulacro;
 DROP TABLE IF EXISTS asignatura;
 DROP TABLE IF EXISTS area;
 DROP TABLE IF EXISTS modulo;
+DROP TABLE IF EXISTS permiso;
 DROP TABLE IF EXISTS perfil;
 DROP TABLE IF EXISTS rol;
-DROP TABLE IF EXISTS permiso;
 DROP TABLE IF EXISTS usuario;
 DROP TABLE IF EXISTS programa;
 DROP TABLE IF EXISTS departamento;
@@ -87,7 +87,7 @@ create table perfil(
 	descripcion varchar(100) NOT NULL,
 	ultimoingreso date NOT NULL,
 	fechavencimiento date NOT NULL,
-	estado varchar(10) NOT NULL,
+	estado char(2) NOT NULL,
 	CHECK(estado='activo' or estado='inactivo' or estado='suspendido' or estado='vencido'),
 	PRIMARY KEY(idperfil),
 	FOREIGN KEY(idrol)REFERENCES rol(idrol) on delete cascade on update cascade
@@ -198,5 +198,4 @@ FOREIGN KEY(idsimulacro)REFERENCES simulacro(idsimulacro)on delete cascade on up
 );
 
 create user ecesis WITH password 'bases1436';
-grant all on usuariocreasimulacro, usuariocreasimulacro, permisomodulo, usuarioperfil, test, respuesta, pregunta to ecesis;
-grant all on simulacro, asignatura, area, modulo, permiso, perfil, rol, usuario, programa, departamento, facultad to ecesis;
+grant all on
