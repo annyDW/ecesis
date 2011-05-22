@@ -19,19 +19,21 @@ private $_instancia;
 		$pass = $_POST['pass'];
 		//Realizamos la consulta a la base de datos y controlamos que nos devuelva
 		//algun resultado
-		$sql = "select u.usuario, u.nombres, u.apellidos, p.idrol from usuario as u, perfil as p, usuarioperfil as up where u.usuario='$user' and u.clave='$pass' and up.idperfil=p.idperfil and up.iduser=u.iduser";
+		$sql = "select u.usuario, u.nombres, u.apellidos, g.idrol, g.estado from usuario as u, grupo as g, usuariogrupo as ug where u.usuario='$user' and u.clave='$pass' and ug.idgrupo=g.idgrupo and ug.iduser=u.iduser";
 		$result = $this->_instancia->execute($sql);
 		
 		if(pg_num_rows($result)==1) {
 			while ($fil = pg_fetch_assoc($result)){
 				if($fil['usuario']==$user){
-					$_SESSION['user'] = $fil['usuario'];
-					$_SESSION['nombres']= $fil['nombres'];
-					$_SESSION['apellidos'] = $fil['apellidos'];
-					$rol = $fil['idrol'];
-					$_SESSION['rol'] = $rol;
-					$this->redirectPage($rol); /* Nos vamos a la sección "privada"
-					de nuestra página*/
+					if($fil['estado']=='activo'){
+						$_SESSION['user'] = $fil['usuario'];
+						$_SESSION['nombres']= $fil['nombres'];
+						$_SESSION['apellidos'] = $fil['apellidos'];
+						$rol = $fil['idrol'];
+						$_SESSION['rol'] = $rol;
+						$this->redirectPage($rol); /* Nos vamos a la sección "privada"
+						de nuestra página*/
+					}
 				}
 			}
 		} else

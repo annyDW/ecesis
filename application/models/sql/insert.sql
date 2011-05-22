@@ -230,21 +230,25 @@ insert INTO rol(
 
 
 
-insert INTO perfil(
-            idperfil, idrol, descripcion, ultimoingreso, fechavencimiento, estado)
-    VALUES (1, 1, 'Alumno unicor', '2010-04-26', '2010-07-01', 'activo');
+insert INTO grupo(
+            idgrupo, idrol, descripcion, codigoregistro, estado)
+    VALUES (1, 1, 'Grupo creado para estudiantes en preparacion para las pruebas de estado', 'acf0123451', 'activo');
 
-insert INTO perfil(
-            idperfil, idrol, descripcion, ultimoingreso, fechavencimiento, estado)
-    VALUES (2, 4, 'Admin sistema ecesis', '2010-04-26', '2010-07-01', 'activo');
+insert INTO grupo(
+            idgrupo, idrol, descripcion, codigoregistro, estado)
+    VALUES (2, 4, 'Grupo para usuarios con privilegios de administrador', 'acf0123452', 'activo');
 
-insert INTO perfil(
-            idperfil, idrol, descripcion, ultimoingreso, fechavencimiento, estado)
-    VALUES (3, 2, 'Docente', '2010-04-26', '2010-07-01', 'activo');
+insert INTO grupo(
+            idgrupo, idrol, descripcion, codigoregistro, estado)
+    VALUES (3, 2, 'Grupo para docentes', 'acf0123453', 'activo');
 
-insert INTO perfil(
-            idperfil, idrol, descripcion, ultimoingreso, fechavencimiento, estado)
-    VALUES (4, 3, 'Preparador', '2010-04-26', '2010-07-01', 'activo');
+insert INTO grupo(
+            idgrupo, idrol, descripcion, codigoregistro, estado)
+    VALUES (4, 3, 'Grupo para docentes encargados de la preparacion de los alumnos', 'acf0123454', 'activo');
+    
+insert INTO grupo(
+            idgrupo, idrol, descripcion, codigoregistro, estado)
+    VALUES (5, 1, 'Grupo para prueba de control de acceso, estuadiante inactivos', 'acf0123455', 'inactivo');
 
 
 insert INTO usuario(
@@ -265,18 +269,18 @@ insert INTO usuario(
 
 
 
-insert INTO usuarioperfil(
-            idperfil, iduser)
+insert INTO usuariogrupo(
+            idgrupo, iduser)
     VALUES (1, 1);
 
-insert INTO usuarioperfil(
-            idperfil, iduser)
+insert INTO usuariogrupo(
+            idgrupo, iduser)
     VALUES (2, 2);
 
-insert INTO usuarioperfil(
-            idperfil, iduser)
+insert INTO usuariogrupo(
+            idgrupo, iduser)
     VALUES (3, 3);
 
-insert INTO usuarioperfil(
-            idperfil, iduser)
+insert INTO usuariogrupo(
+            idgrupo, iduser)
     VALUES (4, 4);
