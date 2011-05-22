@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<cronograma>
+	<simulacro id="1">
+		<nombre>simulacro 1</nombre>
+		<fechapublicacion>2011-05-20</fechapublicacion>
+		<fechafinalizacion>2011-05-21</fechafinalizacion>
+		<duracion>60</duracion>
+		<descripcion>primer simulacro</descripcion>
+		<autor> habulahe </autor>
+	</simulacro>
+	<simulacro id="2">
+		<nombre>simulacro 2</nombre>
+		<fechapublicacion>2011-05-19</fechapublicacion>
+		<fechafinalizacion>2011-05-21</fechafinalizacion>
+		<duracion>60</duracion>
+		<descripcion>segundo simulacro</descripcion>
+		<autor> habulahe </autor>
+	</simulacro>
+	<simulacro id="3">
+		<nombre>simulacro 3</nombre>
+		<fechapublicacion>2011-05-18</fechapublicacion>
+		<fechafinalizacion>2011-05-21</fechafinalizacion>
+		<duracion>60</duracion>
+		<descripcion>tercer simulacro</descripcion>
+		<autor> habulahe </autor>
+	</simulacro>
+	<simulacro id="4">
+		<nombre>simulacro 4</nombre>
+		<fechapublicacion>2011-05-17</fechapublicacion>
+		<fechafinalizacion>2011-05-21</fechafinalizacion>
+		<duracion>60</duracion>
+		<descripcion>cuarto simulacro</descripcion>
+		<autor> habulahe </autor>
+	</simulacro>
+</cronograma>

@@ -1,0 +1,46 @@
+{
+    "cronograma":{
+        "simulacro":[
+            {
+                "id":"1",
+                "nombre":"simulacro 1",
+                "fechapublicacion":"2011-05-20",
+                "fechafinalizacion":"2011-05-21",
+				"horainicio": "12:00",
+                "duracion":"60",
+                "descripcion":"primer simulacro",
+                "autor":"habulahe" 
+            },
+            {
+                "id":2,
+                "nombre":"simulacro 2",
+                "fechapublicacion":"2011-05-19",
+                "fechafinalizacion":"2011-05-21",
+				"horainicio": "12:00",
+                "duracion":"60",
+                "descripcion":"segundo simulacro",
+                "autor": "habulahe"
+            },
+            {
+                "id":"3",
+                "nombre":"simulacro 3",
+                "fechapublicacion":"2011-05-18",
+                "fechafinalizacion":"2011-05-21",
+				"horainicio": "12:00",
+                "duracion":"60",
+                "descripcion":"tercer simulacro",
+                "autor":"habulahe"
+            },
+            {
+                "id":"4",
+                "nombre":"simulacro 4",
+                "fechapublicacion":"2011-05-17",
+                "fechafinalizacion":"2011-05-21",
+				"horainicio": "12:00",
+                "duracion":"60",
+                "descripcion":"cuarto simulacro",
+                "autor":"habulahe"
+            }
+        ]
+    }
+}
