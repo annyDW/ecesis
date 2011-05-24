@@ -2,8 +2,10 @@
 <html>
 <?php
 include_once '../../controllers/SesionController.php';
+
 $con = new SesionController();
 $con->login();
+$con->actionsUsers();
 ?>
 	<head>
 		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
@@ -35,6 +37,7 @@ $con->login();
 					<li><input type="text" name="user" id="user" value="Nombre de usuario"/></li>
 					<li><input type="password" name="pass" id="pwd" value="Contrase&ntilde;a" /></li>
 					<li><input type="submit" name="entrar" id ="entrar" value="Entrar"/></li>
+					<li><input class="boton_register" type="submit" name="register" id ="register" value="&#62;&#62;&#62; Regístrate &#60;&#60;&#60;"/></li>
 					<li><a href="#">Recuperar datos de cuenta</a></li>
 					</ul>
 					</form>

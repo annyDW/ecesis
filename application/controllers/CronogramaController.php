@@ -8,7 +8,7 @@ class CronogramaController{
 	private $_instancia;
 
 	public function __construct(){
-		$this->_instancia = databaseConnect::getInstance();
+		$this->_instancia = databaseAdapter::getInstance();
 		$this->_instancia->connect();
 	}
 	
