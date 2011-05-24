@@ -252,20 +252,20 @@ insert INTO grupo(
 
 
 insert INTO usuario(
-            iduser, numeroid, idprog, tipoid, nombres, apellidos,direccion, telefono, sexo, fechanacimiento, email, usuario, clave)
-    VALUES (1, 123451, 1, 'CC', 'camilo', 'cervantes',  'la patagonia', '5555555', 'M', '1989-01-01', 'usuario1@mail.com', 'kamilin8931', '12345');
+            iduser, numeroid, idprog, tipoid, nombres, apellidos,direccion, municipio, departamento, pais, telefono, movil,sexo, fechanacimiento, email, usuario, clave)
+    VALUES (1, 123451, 1, 'CC', 'camilo', 'cervantes',  'la patagonia', 'Monteria', 'Cordoba', 'Colombia', '5555555', '3555555555', 'M', '1989-01-01', 'usuario1@mail.com', 'kamilin8931', '12345');
 
 insert INTO usuario(
-            iduser, numeroid, idprog, tipoid, nombres, apellidos,direccion, telefono, sexo, fechanacimiento, email, usuario, clave)
-    VALUES (2, 123452, 1, 'CC', 'luis', 'cataño',  'el inframundo', '5555555', 'M', '1989-01-01', 'usuario2@mail.com', 'luchox25', '12345');
+            iduser, numeroid, idprog, tipoid, nombres, apellidos,direccion, municipio, departamento, pais, telefono, movil, sexo, fechanacimiento, email, usuario, clave)
+    VALUES (2, 123452, 1, 'CC', 'luis', 'cataño',  'el inframundo', 'Monteria', 'Cordoba', 'Colombia', '5555555', '3555555555', 'M', '1989-01-01', 'usuario2@mail.com', 'luchox25', '12345');
 
 insert INTO usuario(
-            iduser, numeroid, idprog, tipoid, nombres, apellidos,direccion, telefono, sexo, fechanacimiento, email, usuario, clave)
-    VALUES (3, 123453, 1, 'CC', 'anny', 'almanza',  'algun lugar del mundo', '5555555', 'F', '1989-01-01', 'usuario3@mail.com', 'aalmanza', '12345');
+            iduser, numeroid, idprog, tipoid, nombres, apellidos,direccion, municipio, departamento, pais, telefono, movil, sexo, fechanacimiento, email, usuario, clave)
+    VALUES (3, 123453, 1, 'CC', 'anny', 'almanza',  'algun lugar del mundo', 'Monteria', 'Cordoba', 'Colombia', '5555555', '3555555555', 'F', '1989-01-01', 'usuario3@mail.com', 'aalmanza', '12345');
 
 insert INTO usuario(
-            iduser, numeroid, idprog, tipoid, nombres, apellidos,direccion, telefono, sexo, fechanacimiento, email, usuario, clave)
-    VALUES (4, 123454, 1, 'CC', 'Harold', 'Bula',  'Sahagun', '5555555', 'M', '1989-01-01', 'usuario4@mail.com', 'habula', '12345');
+            iduser, numeroid, idprog, tipoid, nombres, apellidos,direccion, municipio, departamento, pais, telefono, movil, sexo, fechanacimiento, email, usuario, clave)
+    VALUES (4, 123454, 1, 'CC', 'Harold', 'Bula',  'Sahagun', 'Monteria', 'Cordoba', 'Colombia', '5555555', '3555555555', 'M', '1989-01-01', 'usuario4@mail.com', 'habula', '12345');
 
 
 

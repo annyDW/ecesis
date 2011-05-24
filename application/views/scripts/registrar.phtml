@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+		<title>&Eacute;cesis :: Sistema para la simulaci&oacute;n de la evaluacion ECAES</title>
+		<link rel="stylesheet" href="../css/reset.css" media="screen"/>
+		<link rel="stylesheet" href="../css/registro.css" media="screen"/>
+		<link rel="stylesheet" href="../css/style.css" media="screen"/>
+		<script src="../jquery/jquery-1.5.js" type="text/javascript"></script>
+		<script src="../js/usuario.js" type="text/javascript"></script>
+		<script src="../js/redirecciones.js" type="text/javascript"></script>
+	</head>
+	<body>
+	
+	<div id="header-bg"></div>
+		<div id="page">
+			<div id="header">
+				<div id="logo"></div>
+			</div>
+			<div id="banner">
+				<div id="image-banner"></div>
+				<div id="motd"></div>
+			</div>
+	
+		<div id="contenedor">
+			<h2>Formulario de Registro</h2>
+			<form method="post" action="#">
+			<ul>
+			
+			<li class="derecha">
+				<label class="titulo" for="identificaion">Identificación<span class="requerido">*</span></label>
+				<div>
+					<span class="tercio">
+						<select id="tipodoc" name="tipodoc">
+							<option value=""></option>
+							<option value="TI">Tarjeta de identidad</option>
+							<option value="CC">Cedula de ciudadania</option>
+							<option value="CE">Cedula de extranjeria</option>
+						</select>
+						<label for="tipodoc">Tipo de identificación</label>
+					</span>
+					
+					<span class="tercio">
+						<input id="identificacion" name="identificacion" value="" />
+						<label for="identificacion">Numero identificacion</label>
+					</span>
+				</div>
+				<p class="ayuda">Asegúrate de escribir correctamente tu número de id.</p>
+			</li>
+			
+			<li class="izquierda">
+				<label class="titulo" for="nombre">Nombre, apellidos y genero<span class="requerido">*</span>
+				</label>
+			<div>
+			<span class="completo">
+				<input id="nombre" name="nombre" value="" />
+				<label for="nombre">Nombres</label>
+			</span>
+			
+			<span class="completo">
+				<input id="apellido1" name="apellido1" value="" />
+				<label for="apellido1">Apellidos</label>
+			</span>
+			
+			<span class="tercio">
+						<select id="genero" name="genero">
+							<option value=""></option>
+							<option value="M">Masculino</option>
+							<option value="F">Femenino</option>
+						</select>
+						<label for="genero">genero</label>
+			</span>
+			</div>
+			
+			<p class="ayuda">No te olvides de escribir tambien tu segundo apellido</p>
+			</li>
+			
+			<li class="derecha">
+				<label class="titulo" for="fechanacimiento">Fecha de nacimiento <span class="requerido">*</span></label>
+				<div>
+				
+					<span class="tercio">
+						<select id="dia" name="dia">
+							<option value=""></option>
+							<option value="1">1</option>
+							<option value="1">2</option>
+							<option value="1">3</option>
+							<option value="1">4</option>
+							<option value="1">5</option>
+							<option value="1">6</option>
+							<option value="1">7</option>
+							<option value="1">8</option>
+							<option value="1">9</option>
+							<option value="1">10</option>
+							<option value="1">11</option>
+							<option value="1">12</option>
+							<option value="1">13</option>
+							<option value="1">14</option>
+							<option value="1">15</option>
+							<option value="1">16</option>
+							<option value="1">17</option>
+							<option value="1">18</option>
+							<option value="1">19</option>
+							<option value="1">20</option>
+							<option value="1">21</option>
+							<option value="1">22</option>
+							<option value="1">23</option>
+							<option value="1">24</option>
+							<option value="1">25</option>
+							<option value="1">26</option>
+							<option value="1">27</option>
+							<option value="1">28</option>
+							<option value="1">29</option>
+							<option value="1">30</option>
+							<option value="1">31</option>
+						</select>
+						<label for="dia">Día</label>
+					</span>
+					
+					<span class="tercio">
+						<select id="mes" name="mes">
+							<option value=""></option>
+							<option value="1">1</option>
+							<option value="1">2</option>
+							<option value="1">3</option>
+							<option value="1">4</option>
+							<option value="1">5</option>
+							<option value="1">6</option>
+							<option value="1">7</option>
+							<option value="1">8</option>
+							<option value="1">9</option>
+							<option value="1">10</option>
+							<option value="1">11</option>
+							<option value="1">12</option>
+						</select>
+						<label for="mes">Mes</label>
+					</span>
+					
+					<span class="tercio">
+						<select id="anio" name="anio">
+							<option value=""></option>
+							<option value="1">2010</option>
+							<option value="1">2009</option>
+							<option value="1">2008</option>
+							<option value="1">2007</option>
+							<option value="1">2006</option>
+							<option value="1">2005</option>
+							<option value="1">2004</option>
+							<option value="1">2003</option>
+							<option value="1">2002</option>
+							<option value="1">2001</option>
+							<option value="1">2000</option>
+							<option value="1">1999</option>
+							<option value="1">1998</option>
+							<option value="1">1997</option>
+							<option value="1">1996</option>
+							<option value="1">1995</option>
+							<option value="1">1994</option>
+							<option value="1">1993</option>
+							<option value="1">1992</option>
+							<option value="1">1991</option>
+							<option value="1">1990</option>
+							<option value="1">1989</option>
+							<option value="1">1988</option>
+							<option value="1">1987</option>
+							<option value="1">1986</option>
+							<option value="1">1985</option>
+							<option value="1">1984</option>
+							<option value="1">1983</option>
+							<option value="1">1982</option>
+							<option value="1">1981</option>
+							<option value="1">1980</option>
+						</select>
+						<label for="anio">Año</label>
+					</span>
+					
+				</div>
+				<p class="ayuda">Seleccione su fecha de nacimiento de la lista.</p>
+				</li>
+			
+			<li class="izquierda">
+				<label class="titulo" for="direccion">Direccion<span class="requerido">*</span> </label>
+				
+				<div>
+					<span class="completo">
+						<input id="direccion" name="direccion" value="" />
+						<label for="direccion">Dirección residencia</label>
+					</span>
+					
+					<span class="completo">
+						<input id="municipio" name="municipio" value="" />
+						<label for="municipio">Municipio</label>
+					</span>
+					
+					<span class="tercio">
+						<select id="departamento" name="departamento">
+							<option value=""></option>
+							<option value="provincia1">Cordoba</option>
+							<option value="provincia2">Sucre</option>
+							<option value="provincia3">Atlantico</option>
+						</select>
+						<label for="provincia">Departamento</label>
+					</span>
+					
+					<span class="dostercios">
+						<select id="pais" name="pais">
+							<option value=""></option>
+							<option value="pais1">Colombia</option>
+							<option value="pais2">Venezuela</option>
+							<option value="pais3">Ecuador</option>
+						</select>
+						<label for="pais">País</label>
+					</span>
+				</div>
+				
+				<p class="ayuda">Escriba la direccion en la que vive mientras asiste a sus clases universitarias.</p>
+			</li>
+			
+			<li class="derecha">
+				<label class="titulo" for="email">Email<span class="requerido">*</span></label>
+				<div>
+					<span class="completo">
+						<input id="email" name="email" value="" />
+					</span>
+				</div>
+				<p class="ayuda">Asegúrate de que sea válido</p>
+			</li>
+			
+			<li class="izquierda">
+				<label class="titulo" for="telefonofijo">Teléfono <span class="requerido">*</span></label>
+				<div>
+				
+					<span class="mitad">
+						<input id="telefonofijo" name="telefonofijo" value="" />
+						<label for="telefonofijo">Fijo</label>
+					</span>
+					
+					<span class="mitad">
+						<input id="telefonomovil" name="telefonomovil" value="" />
+						<label for="telefonomovil">Móvil</label>
+					</span>
+				</div>
+				<p class="ayuda">Sin prefijo de país y sin espacios en blanco</p>
+				</li>
+			
+				<li class="derecha">
+				<label class="titulo" for="universidad">Universidad <span class="requerido">*</span></label>
+				<div>
+				
+					<span class="tercio">
+						<input id="codigoregistro" name="codigoregistro" value="" />
+						<label for="codigoregistro">Código de registro</label>
+					</span>
+					
+					<span class="tercio">
+						<select id="programa" name="programa">
+							<option value=""></option>
+							<option value="1">Ingenieria de Sistemas</option>
+							<option value="2">Ingenieria Industrial</option>
+							<option value="3">Ingenieria Mecanica</option>
+							<option value="3">Ingenieria Ambiental</option>
+						</select>
+						<label for="programa">Programa al que pertenece</label>
+					</span>
+					
+					<span class="tercio">
+						<select id="rol" name="rol">
+							<option value=""></option>
+							<option value="1">Estudiante</option>
+							<option value="2">Docente</option>
+						</select>
+						<label for="rol">Rol del usuario</label>
+					</span>
+				</div>
+				<p class="ayuda">Si no posee un codigo de registro dirijase a su departamente y solicitelo.</p>
+				</li>
+			
+				<li class="botones">
+					<input id="alta" type="submit" value="Darme de alta &rarr;" />
+				</li>
+				
+			
+			</ul>
+			</form>
+		</div>
+		<div id="footer">
+			<p>&copy; 2011 Universidad de C&oacute;rdoba</p>
+		</div>
+		</div>
+	</body>
+</html>
