@@ -1,0 +1,167 @@
+{
+    "preguntas":{
+        "pregunta":[
+            {
+                "contenido":"Una clase se implanta con TDA que permite:",
+				"numpregunta":"0",
+                "tipo":"1",
+                "respuesta":[
+                    {
+                        "contenido":"Representar cualquier tipo de objeto.",
+                        "correcta":"f",
+						"letra":"a"
+                    },
+                    {
+                        "contenido":"Sustituir las estructura de datos tradicionales.",
+                        "correcta":"f",
+						"letra":"b"
+                    },
+                    {
+                        "contenido":"Representar datos y código en una misma unidad.",
+                        "correcta":"t",
+						"letra":"c"
+                    },
+                    {
+                        "contenido":"Implementar herencia y polimorfismo.",
+                        "correcta":"f",
+						"letra":"d"
+                    },
+                    {
+                        "contenido":"Propiciar encapsulado o encapsulamiento.",
+                        "correcta":"f",
+						"letra":"e"
+                    }
+                ]
+            },
+            {
+                "contenido":"La sobre escritura de métodos se establece:",
+				"numpregunta":"1",
+                "tipo":"1",
+                "respuesta":[
+                    {
+                        "contenido":"Entre objetos de una misma clase.",
+                        "correcta":"f",
+						"letra":"a"
+						
+                    },
+                    {
+                        "contenido":"Entre métodos de una misma clase.",
+                        "correcta":"f",
+						"letra":"b"
+                    },
+                    {
+                        "contenido":"Entre clases amigas.",
+                        "correcta":"f",
+						"letra":"c"
+                    },
+                    {
+                        "contenido":"Entre métodos sobrecargados dentro de una jerarquía de clases.",
+                        "correcta":"f",
+						"letra":"d"
+                    },
+                    {
+                        "contenido":"Entre métodos con el mismo diseño dentro de una jerarquía de clases.",
+                        "correcta":"t",
+						"letra":"e"
+                    }
+                ]
+            },
+            {
+                "contenido":"Los especificadores de visibilidad de los atributos y métodos de una clase condiciona su acceso:",
+                "numpregunta":"2",
+				"tipo":"1",
+                "respuesta":[
+                    {
+                        "contenido":"A nivel de las instancias.",
+                        "correcta":"t",
+						"letra":"a"
+                    },
+                    {
+                        "contenido":"A nivel de la implementación de los métodos.",
+                        "correcta":"f",
+						"letra":"b"
+                    },
+                    {
+                        "contenido":"A nivel del diseño de la clase.",
+                        "correcta":"f",
+						"letra":"c"
+                    },
+                    {
+                        "contenido":"A nivel del ámbito o alcance de la clase.",
+                        "correcta":"f",
+						"letra":"d"
+                    },
+                    {
+                        "contenido":"A nivel de los constructores.",
+                        "correcta":"f",
+						"letra":"e"
+                    }
+                ]
+            },
+            {
+                "contenido":"El encapsulamiento o encapsulado sugiere:",
+				"numpregunta":"3",
+                "tipo":"1",
+                "respuesta":[
+                    {
+                        "contenido":"Asilamiento de los datos de una instancia.",
+                        "correcta":"f",
+						"letra":"a"
+                    },
+                    {
+                        "contenido":"Denegar el acceso a los elementos de una clase en una relación de herencia.",
+                        "correcta":"f",
+						"letra":"b"
+                    },
+                    {
+                        "contenido":"Ocultar la implementación de los métodos.",
+                        "correcta":"f",
+						"letra":"c"
+                    },
+                    {
+                        "contenido":"Protección de atributos y especialización de métodos.",
+                        "correcta":"t",
+						"letra":"d"
+                    },
+                    {
+                        "contenido":"Proteger el diseño de la clase de cambios.",
+                        "correcta":"f",
+						"letra":"e"
+                    }
+                ]
+            },
+            {
+                "contenido":"El polimorfismo requiere el manejo de:",
+				"numpregunta":"4",
+                "tipo":"1",
+                "respuesta":[
+                    {
+                        "contenido":"Objetos de la misma clase.",
+                        "correcta":"f",
+						"letra":"a"
+                    },
+                    {
+                        "contenido":"Herencia y métodos con igual prototipo.",
+                        "correcta":"t",
+						"letra":"b"
+                    },
+                    {
+                        "contenido":"Objetos estáticos.",
+                        "correcta":"f",
+						"letra":"c"
+                    },
+                    {
+                        "contenido":"Funciones amigas.",
+                        "correcta":"f",
+						"letra":"d"
+                    },
+                    {
+                        "contenido":"Métodos sobrecargados.",
+                        "correcta":"f",
+						"letra":"e"
+                    }
+                ]
+            }
+        ]
+    }
+}

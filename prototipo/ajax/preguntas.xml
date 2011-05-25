@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preguntas>
+	<pregunta>
+		<contenido>Una clase se implanta con TDA que permite:</contenido>
+		<tipo>1</tipo>
+		<respuesta>
+			<contenido>Representar cualquier tipo de objeto.</contenido>
+			<correcta>f</correcta>
+		</respuesta>
+		<respuesta>
+			<contenido>Sustituir las estructura de datos tradicionales.</contenido>
+			<correcta>f</correcta>
+		</respuesta>
+		<respuesta>
+			<contenido>Representar datos y código en una misma unidad.</contenido>
+			<correcta>t</correcta>
+		</respuesta>
+		<respuesta>
+			<contenido>Implementar herencia y polimorfismo.</contenido>
+			<correcta>f</correcta>
+		</respuesta>
+		<respuesta>
+			<contenido>Propiciar encapsulado o encapsulamiento.</contenido>
+			<correcta>f</correcta>
+		</respuesta>
+	</pregunta>
+	<pregunta>
+		<contenido>La sobre escritura de métodos se establece:</contenido>
+		<tipo>1</tipo>
+		<respuesta>
+			<contenido>Entre objetos de una misma clase.</contenido>
+			<correcta>f</correcta>
+		</respuesta>
+		<respuesta>
+			<contenido>Entre métodos de una misma clase.</contenido>
+			<correcta>f</correcta>
+		</respuesta>
+		<respuesta>
+			<contenido>Entre clases amigas.</contenido>
+			<correcta>f</correcta>
+		</respuesta>
+		<respuesta>
+			<contenido>Entre métodos sobrecargados dentro de una jerarquía de clases.</contenido>
+			<correcta>f</correcta>
+		</respuesta>
+		<respuesta>
+			<contenido>Entre métodos con el mismo diseño dentro de una jerarquía de clases.</contenido>
+			<correcta>t</correcta>
+		</respuesta>
+	</pregunta>
+	<pregunta>
+		<contenido>Los especificadores de visibilidad de los atributos y métodos de una clase condiciona su acceso:</contenido>
+		<tipo>1</tipo>
+		<respuesta>
+			<contenido>A nivel de las instancias.</contenido>
+			<correcta>t</correcta>
+		</respuesta>
+		<respuesta>
+			<contenido>A nivel de la implementación de los métodos.</contenido>
+			<correcta>f</correcta>
+		</respuesta>
+		<respuesta>
+			<contenido>A nivel del diseño de la clase.</contenido>
+			<correcta>f</correcta>
+		</respuesta>
+		<respuesta>
+			<contenido>A nivel del ámbito o alcance de la clase.</contenido>
+			<correcta>f</correcta>
+		</respuesta>
+		<respuesta>
+			<contenido>A nivel de los constructores.</contenido>
+			<correcta>f</correcta>
+		</respuesta>
+	</pregunta>
+	<pregunta>
+		<contenido>El encapsulamiento o encapsulado sugiere: </contenido>
+		<tipo>1</tipo>
+		<respuesta>
+			<contenido>Asilamiento de los datos de una instancia.</contenido>
+			<correcta>f</correcta>
+		</respuesta>
+		<respuesta>
+			<contenido>Denegar el acceso a los elementos de una clase en una relación de herencia.</contenido>
+			<correcta>f</correcta>
+		</respuesta>
+		<respuesta>
+			<contenido>Ocultar la implementación de los métodos.</contenido>
+			<correcta>f</correcta>
+		</respuesta>
+		<respuesta>
+			<contenido>Protección de atributos y especialización de métodos.</contenido>
+			<correcta>t</correcta>
+		</respuesta>
+		<respuesta>
+			<contenido>Proteger el diseño de la clase de cambios.</contenido>
+			<correcta>f</correcta>
+		</respuesta>
+	</pregunta>
+	<pregunta>
+		<contenido>El polimorfismo requiere el manejo de:</contenido>
+		<tipo>1</tipo>
+		<respuesta>
+			<contenido>Objetos de la misma clase.</contenido>
+			<correcta>f</correcta>
+		</respuesta>
+		<respuesta>
+			<contenido>Herencia y métodos con igual prototipo.</contenido>
+			<correcta>t</correcta>
+		</respuesta>
+		<respuesta>
+			<contenido>Objetos estáticos.</contenido>
+			<correcta>f</correcta>
+		</respuesta>
+		<respuesta>
+			<contenido>Funciones amigas.</contenido>
+			<correcta>f</correcta>
+		</respuesta>
+		<respuesta>
+			<contenido>Métodos sobrecargados.</contenido>
+			<correcta>f</correcta>
+		</respuesta>
+	</pregunta>
+</preguntas>
+	
