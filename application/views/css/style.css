@@ -30,7 +30,15 @@ hr{
 	padding:0;
 	color: white;
 	background-color: #00112e;
-}			
+}
+
+.boton_register{
+	border:0;
+	padding:0;
+	color: yellow;
+	background-color: #25567B;
+}
+
 #header-bg{
 	background-color: #00112e;
 	width: 100%;

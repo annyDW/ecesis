@@ -87,6 +87,7 @@ create table rol(
 
 create table grupo(
 	idgrupo serial NOT NULL,
+	idadmin INTEGER NOT NULL,
 	idrol INTEGER NOT NULL, 
 	descripcion varchar(100) NOT NULL,
 	codigoRegistro char(10) NOT NULL, 
@@ -94,6 +95,7 @@ create table grupo(
 	UNIQUE(codigoRegistro),
 	CHECK(estado='activo' or estado='inactivo' or estado='suspendido' or estado='vencido'),
 	PRIMARY KEY(idgrupo),
+	FOREIGN KEY(idadmin)REFERENCES usuario(iduser) on delete cascade on update cascade,
 	FOREIGN KEY(idrol)REFERENCES rol(idrol) on delete cascade on update cascade
 ); 
 

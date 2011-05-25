@@ -12,7 +12,7 @@ set_include_path(get_include_path() . PATH_SEPARATOR . $rootPath . '/controllers
  * @author luchox25
  */
 include_once 'conf/dbconf.php';									
-class databaseConnect {
+class databaseAdapter {
 
    //Datos de conexion
 	private $_user;
@@ -73,6 +73,11 @@ class databaseConnect {
             }
 			return $okconnect;
         }
+        
+        private function  closePostgres(){
+        	
+        }
+        
 	//Ejecutar consulta en mysql
     private function executeMsql($query)
 	{
@@ -98,6 +103,46 @@ class databaseConnect {
             }
         }
 
+    private function countRowPostgres($result){
+    	return pg_num_rows($result);
+    }
+    
+    private function countRowMysql($result){
+    	return mysql_num_rows($result);
+    }
+    
+    public function countRows($result){
+     		switch ($this->_databaseManager){
+                case 'mysql':
+                    return $this->countRowMysql($result);
+                    break;
+                case 'postgresql':
+                    return $this->countRowPostgres($result);
+                    break;
+            }
+    }
+    
+    private function retornarFilaPostgres($result){
+    	$fil = pg_fetch_assoc($result);
+    	return $fil;
+    }
+
+	private function retornarFilaMysql($result){
+    	$fil = mysql_fetch_assoc($result);
+    	return $fil;
+    }
+    
+    public function retornarFila($result){
+    		switch ($this->_databaseManager){
+                case 'mysql':
+                    return $this->retornarFilaMysql($result);
+                    break;
+                case 'postgresql':
+                    return $this->retornarFilaPostgres($result);
+                    break;
+            }
+    }
+    
         public function setConnectDefault(){
         	$info = new dbconf();
       		$this->_databaseManager = $info->getDatabaseManager();
