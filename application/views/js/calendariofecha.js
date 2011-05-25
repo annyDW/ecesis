@@ -475,9 +475,9 @@ function FormatDate(pDate)
 		return (pDate+DateSeparator+(this.Month+1)+DateSeparator+this.Year);
 	else if (this.Format.toUpperCase()=="DDMMMYYYY")
 		return (pDate+DateSeparator+this.GetMonthName(false)+DateSeparator+this.Year);
-	else if (this.Format.toUpperCase()=="MMDDYYYY")
-		return ((this.Month+1)+DateSeparator+pDate+DateSeparator+this.Year);
+	else if (this.Format.toUpperCase()=="YYYYMMDD")
+		return (this.Year+DateSeparator+(this.Month+1)+DateSeparator+pDate);
 	else if (this.Format.toUpperCase()=="MMMDDYYYY")
-		return (this.GetMonthName(false)+DateSeparator+pDate+DateSeparator+this.Year);			
+		return (this.GetMonthName(false)+DateSeparator+pDate+DateSeparator+this.Year);
 }
 Calendar.prototype.FormatDate=FormatDate;	

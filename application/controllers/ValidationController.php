@@ -4,11 +4,16 @@ class ValidationController{
 
 	public function ValidateEmail($email)
 	{
-  		return filter_var($email, FILTER_VALIDATE_EMAIL);
+  		return preg_match('/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i', $email);
 	}
 	
-	public function SanitizeEmaill($string) {
-    	return filter_var($url, FILTER_SANITIZE_EMAIL);
+	public function ValidateEmpty($value){
+		$tot = strlen($value);
+		return $tot>0;
+	}
+	
+	public function SanitizeEmaill($email) {
+    	return filter_var($email, FILTER_SANITIZE_EMAIL);
 	}
 	
 	public function check_email($email){
@@ -102,7 +107,7 @@ class ValidationController{
 		
 		$errores = array();
 		
-		if(!($this->ValidateStringr($tipodoc)&&$this->SanitizeStringr($tipodoc))){
+		if(!(($this->ValidateStringr($tipodoc)&&$this->SanitizeStringr($tipodoc))&&$this->ValidateEmpty($tipodoc))){
 			$errores[] = "tipodoc";
 			echo "tipodoc\n";
 		}
@@ -117,7 +122,7 @@ class ValidationController{
 			echo "nombres\n";
 		}
 		
-		if(!($this->ValidateStringr($apellidos)&&$this->SanitizeStringr($apellidos))){
+		if(!($this->ValidateEmpty($apellidos)&&$this->SanitizeStringr($apellidos))){
 			$errores[] = "apellidos";
 			echo "apellidos\n";
 		}
@@ -141,11 +146,12 @@ class ValidationController{
 				echo"password\n";
 			}
 		}
-		/*
-		if(!($this->ValidateDate($fecha))){
+		
+		if(!($this->ValidateEmpty($fecha))){
 			$errores[] = "fecha";
+			echo "fecha\n";
 		}
-		*/
+		
 		if(!($this->ValidateAddress($direccion))){
 			$errores[] = "direccion";
 			echo "direccion\n";
@@ -158,17 +164,17 @@ class ValidationController{
 		
 		if(!($this->ValidateStringr($departamento)&&$this->SanitizeStringr($departamento))){
 			$errores[] = "departamento";
-			echo "departamento\n";
+			echo "Departamento: ".$departamento." \n";
 		}
 		
 		if(!($this->ValidateStringr($pais)&&$this->SanitizeStringr($pais))){
 			$errores[] = "pais";
-			echo "pais\n";
+			echo "pais: ".$pais." \n";
 		}
 		
-		if(!($this->ValidateEmail($email))){
-			$errores[] = "email";
-			echo  "email\n";
+		if(!($this->ValidateEmail($email)&&$this->SanitizeEmaill($email))){
+				$errores[] = "email";
+				echo  "email\n";
 		}
 		
 		if(!($this->ValidateNumber($telefonofijo)&&$this->SanitizeNumber($telefonofijo))){
@@ -186,14 +192,14 @@ class ValidationController{
 			echo  "codigo\n";
 		}
 		
-		if(!($this->ValidateStringr($programa)&&$this->SanitizeStringr($programa))){
+		if(!($this->ValidateNumber($programa)&&$this->SanitizeNumber($programa))){
 			$errores[] = "programa";
 			echo "programa\n";
 		}
 		
 		if(!($this->ValidateNumber($rol)&&$this->SanitizeNumber($rol))){
 			$errores[] = "rol\n";
-			echo "rol";
+			echo "rol\n";
 		}
 		
 		return $errores;

@@ -21,7 +21,7 @@ private $_instancia;
 		//algun resultado
 		$sql = "select u.usuario, u.nombres, u.apellidos, g.idrol, g.estado from usuario as u, grupo as g, usuariogrupo as ug where u.usuario='$user' and u.clave='$pass' and ug.idgrupo=g.idgrupo and ug.iduser=u.iduser";
 		$result = $this->_instancia->execute($sql);
-		
+		$this->_instancia->close();
 		if($this->_instancia->countRows($result)==1) {
 			while ($fil = $this->_instancia->retornarFila($result)){
 				if($fil['usuario']==$user){

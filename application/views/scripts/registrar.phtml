@@ -38,9 +38,8 @@
 				<div>
 					<span class="tercio">
 						<select id="tipodoc" name="tipodoc">
-							<option value="null"></option>
 							<option value="TI">Tarjeta de identidad</option>
-							<option value="CC">Cedula de ciudadania</option>
+							<option value="CC" selected="selected">Cedula de ciudadania</option>
 							<option value="CE">Cedula de extranjeria</option>
 						</select>
 						<label for="tipodoc">Tipo de identificación</label>
@@ -70,7 +69,7 @@
 			
 			<span class="tercio">
 						<select id="genero" name="genero">
-							<option value="null"></option>
+							<option value=""></option>
 							<option value="M">Masculino</option>
 							<option value="F">Femenino</option>
 						</select>
@@ -109,8 +108,8 @@
 				<div>
 					
 					<span class="tercio">
-						<input id="fecha" name="fecha"  type="text" size="25"><a href="javascript:NewCal('fecha','mmddyyyy')"><img src="../images/cal.gif" width="16" height="16" border="0" alt="Pick a date"></a>
-						<label for="cal1Date">Fecha de nacimiento(mm-dd-aaaa)</label>
+						<input id="fecha" name="fecha" readonly="readonly" type="text" size="25"><a href="javascript:NewCal('fecha','yyyymmdd')"><img src="../images/cal.gif" width="16" height="16" border="0" alt="Pick a date"></a>
+						<label for="cal1Date">Fecha de nacimiento(aaa-mm-dd)</label>
 					</span>
 					<div id="cal1Container"></div>  			
 				</div>
@@ -134,9 +133,9 @@
 					<span class="tercio">
 						<select id="departamento" name="departamento">
 							<option value=""></option>
-							<option value="provincia1">Cordoba</option>
-							<option value="provincia2">Sucre</option>
-							<option value="provincia3">Atlantico</option>
+							<option value="Cordoba">Cordoba</option>
+							<option value="Sucre">Sucre</option>
+							<option value="Atlantico">Atlantico</option>
 						</select>
 						<label for="provincia">Departamento</label>
 					</span>
@@ -144,9 +143,9 @@
 					<span class="dostercios">
 						<select id="pais" name="pais">
 							<option value=""></option>
-							<option value="pais1">Colombia</option>
-							<option value="pais2">Venezuela</option>
-							<option value="pais3">Ecuador</option>
+							<option value="Colombia">Colombia</option>
+							<option value="Venezuela">Venezuela</option>
+							<option value="Ecuador">Ecuador</option>
 						</select>
 						<label for="pais">País</label>
 					</span>
@@ -197,7 +196,7 @@
 							<option value="1">Ingenieria de Sistemas</option>
 							<option value="2">Ingenieria Industrial</option>
 							<option value="3">Ingenieria Mecanica</option>
-							<option value="3">Ingenieria Ambiental</option>
+							<option value="4">Ingenieria Ambiental</option>
 						</select>
 						<label for="programa">Programa al que pertenece</label>
 					</span>

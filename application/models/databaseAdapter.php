@@ -75,7 +75,22 @@ class databaseAdapter {
         }
         
         private function  closePostgres(){
-        	
+        	pg_close($this->_conn);
+        }
+        
+		private function  closeMysql(){
+        	mysql_close($this->_conn);
+        }
+        
+        public function close(){
+         switch ($this->_databaseManager){
+                case 'mysql':
+                    return $this->closeMysql();
+                    break;
+                case 'postgresql':
+                    return $this->closePostgres();
+                    break;
+            }
         }
         
 	//Ejecutar consulta en mysql

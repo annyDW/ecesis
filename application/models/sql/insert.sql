@@ -246,25 +246,24 @@ insert INTO usuario(
     VALUES (4, 123454, 1, 'CC', 'Harold', 'Bula',  'Sahagun', 'Monteria', 'Cordoba', 'Colombia', '5555555', '3555555555', 'M', '1989-01-01', 'usuario4@mail.com', 'habula', '12345');
 
 
-insert INTO grupo(
-            idgrupo, idadmin, idrol, descripcion, codigoregistro, estado)
-    VALUES (1, 4, 1, 'Grupo creado para estudiantes en preparacion para las pruebas de estado', 'acf0123451', 'activo');
+insert INTO grupo(idadmin, idrol, descripcion, codigoregistro, estado)
+    VALUES (3, 1, 'Grupo creado para estudiantes en preparacion para las pruebas de estado', 'acf0123451', 'activo');
 
 insert INTO grupo(
-            idgrupo, idadmin, idrol, descripcion, codigoregistro, estado)
-    VALUES (2, 2, 4, 'Grupo para usuarios con privilegios de administrador', 'acf0123452', 'activo');
+            idadmin, idrol, descripcion, codigoregistro, estado)
+    VALUES (3, 4, 'Grupo para usuarios con privilegios de administrador', 'acf0123452', 'activo');
 
 insert INTO grupo(
-            idgrupo, idadmin, idrol, descripcion, codigoregistro, estado)
-    VALUES (3, 2, 2, 'Grupo para docentes', 'acf0123453', 'activo');
+            idadmin, idrol, descripcion, codigoregistro, estado)
+    VALUES (3, 2, 'Grupo para docentes', 'acf0123453', 'activo');
 
 insert INTO grupo(
-            idgrupo, idadmin, idrol, descripcion, codigoregistro, estado)
-    VALUES (4, 2, 3, 'Grupo para docentes encargados de la preparacion de los alumnos', 'acf0123454', 'activo');
+            idadmin, idrol, descripcion, codigoregistro, estado)
+    VALUES (3, 3, 'Grupo para docentes encargados de la preparacion de los alumnos', 'acf0123454', 'activo');
     
 insert INTO grupo(
-            idgrupo, idadmin, idrol, descripcion, codigoregistro, estado)
-    VALUES (5, 4, 1, 'Grupo para prueba de control de acceso, estuadiante inactivos', 'acf0123455', 'inactivo');
+            idadmin, idrol, descripcion, codigoregistro, estado)
+    VALUES (3, 1, 'Grupo para prueba de control de acceso, estuadiante inactivos', 'acf0123455', 'inactivo');
     
     
 
